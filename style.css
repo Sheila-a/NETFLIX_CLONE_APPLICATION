@@ -1,0 +1,278 @@
+:root {
+    --primary-color: black;
+    --primary-main-color: rgba(229, 9, 20, 1);
+    --secondary-color: rgba(48, 48, 48, 1);
+    --footer-text-color: rgba(117, 117, 117, 1);
+    --body-text-color: rgba(255, 255, 255, 1);
+    --text-font-weight: 250;
+    --break-line-color: rgba(34, 34, 34, 1);
+    --footer-text-color: #757575;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
+}
+
+hr {
+    background-color: var(--break-line-color);
+    height: 5px;
+    border: none;
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--body-text-color);
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+.light-theme {
+    --primary-color: rgba(255, 255, 255, 1);
+    --body-text-color: black;
+    --break-line-color: rgba(229, 9, 20, 1);
+    --text-font-weight: 400;
+
+}
+
+/* Landing Page Design Starts */
+.intro- {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+
+}
+
+.intro {
+    padding: 20px 20px 0 20px;
+}
+
+.intro-bg {
+    position: absolute;
+    opacity: .5;
+    object-fit: cover;
+}
+
+.intro-header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+}
+
+.intro-header-right {
+    display: flex;
+}
+
+#iccon {
+    width: 25px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+
+
+.intro-header select,
+.intro-header-right button {
+    margin: 10px;
+    font-size: 15px;
+    padding: 7px 17px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.intro-header-right button {
+    background-color: var(--primary-main-color);
+    color: var(--body-text-color);
+
+}
+
+.intro-header-right button:hover {
+    background-color: var(--body-text-color);
+    color: var(--primary-main-color);
+    box-shadow: var(--primary-main-color)2px 8px 24px;
+}
+
+
+
+.intro-hero {
+    color: var(--body-text-color);
+    height: 425px;
+    text-align: center;
+    position: relative;
+}
+
+.intro-hero h1 {
+    font-size: 60px;
+    letter-spacing: .5%;
+    font-weight: 700;
+    margin: 74px auto 10px auto;
+    width: 686px;
+    line-height: 1;
+}
+
+.intro-hero p {
+    font-weight: var(--text-font-weight);
+}
+
+.intro-hero-end {
+    display: flex;
+    justify-content: center;
+}
+
+.intro-hero-end input {
+    padding: 10px 22px 10px 8px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+.intro-hero-end button {
+    padding: 11px 16px;
+    background-color: var(--primary-main-color);
+    color: var(--body-text-color);
+    cursor: pointer;
+    border: none;
+    font-weight: 350;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.intro-hero-end span {
+    margin-left: 8px;
+}
+
+.intro-hero-end button:hover {
+    background-color: var(--body-text-color);
+    color: var(--primary-main-color);
+}
+
+.sec-comp,
+.third-comp,
+.fourth-comp,
+.fifth-comp {
+    color: var(--body-text-color);
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: var(--text-font-weight);
+    margin: 2vh 0 5vh 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.third-comp {
+    margin: 10vh 0 5vh 0;
+}
+
+.sec-comp div,
+.third-comp div {
+    width: 400px;
+}
+
+
+.sec-comp-text p {
+    width: 300px;
+}
+
+.sec-comp-rel,
+.third-comp-rel,
+.fourth-comp-rel {
+    position: absolute;
+    overflow: hidden;
+    width: 300px;
+}
+
+.sec-comp-rel {
+    margin-top: 9.5vh;
+    margin-left: 8vh;
+}
+
+.sec-comp-abs,
+.third-comp-abs,
+.fourth-comp-abs {
+    position: relative;
+    width: 390px;
+}
+
+.third-comp-rel {
+    width: 400px;
+}
+
+.third-comp-abs {
+    margin-top: 24vh;
+    /* width: 300px; */
+}
+
+.third-comp-text,
+.fourth-comp-text {
+    width: 300px;
+    margin-left: 5vw;
+}
+
+.fourth-comp-text {
+    width: 350px;
+    margin-right: 6vw;
+}
+
+.fourth-comp-rel {
+    width: 250px;
+    margin-top: 4vh;
+    margin-left: 11vh;
+}
+
+.fifth-comp div {
+    width: 400px;
+}
+
+.fifth-comp-img img {
+    width: 99%;
+}
+
+.fifth-comp-text {
+    margin-left: 5vw;
+}
+
+.FAQ {
+    color: var(--body-text-color);
+    width: 500px;
+    margin: 5vh auto;
+    text-align: center;
+}
+
+.FAQ-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: var(--text-font-weight);
+    background-color: var(--secondary-color);
+    padding-right: 1vw;
+    padding-left: 1vw;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.FAQ-list:hover {
+    background-color: var(--body-text-color);
+    color: var(--primary-main-color);
+    font-weight: normal;
+}
+
+footer {
+    color: var(--footer-text-color);
+    font-weight: var(--text-font-weight);
+    justify-content: center;
+    /* text-align: center; */
+    width: 900px;
+    margin: auto;
+}
+
+.footer-div-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Landing Page Design Ends */
