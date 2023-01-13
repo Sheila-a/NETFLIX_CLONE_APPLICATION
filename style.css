@@ -7,7 +7,13 @@
     --text-font-weight: 250;
     --break-line-color: rgba(34, 34, 34, 1);
     --footer-text-color: #757575;
+    --signUp-bg-color: rgba(0, 0, 0, 0.75);
+    --signUp-input-color: rgba(51, 51, 51, 1);
+    --signUp-input-text-color: rgba(140, 140, 140, 1);
+    --highlight-color: rgba(0, 113, 235, 1);
 }
+
+
 
 body {
     margin: 0;
@@ -40,16 +46,109 @@ a:hover {
 
 }
 
+/* Sign Up Design Start */
+.signUp- {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.signUp-bg {
+    position: absolute;
+    object-fit: cover;
+}
+
+.signUp {
+    padding: 20px 20px 0 20px;
+}
+
+.signUp-header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+}
+
+.signUp-form {
+    color: var(--body-text-color);
+    background: var(--signUp-bg-color);
+    margin: auto;
+    width: 255px;
+    height: 300px;
+    position: relative;
+    padding: 20px 60px;
+}
+
+.signUp-form input,
+.signUp-form button {
+    padding: 10px;
+    margin-bottom: 16px;
+    border-radius: 3px;
+    border: 0px;
+    background-color: var(--signUp-input-color);
+    color: var(--signUp-input-text-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.signUp-btn {
+    background-color: var(--primary-main-color) !important;
+    color: var(--body-text-color) !important;
+    font-weight: 700;
+}
+
+.signUp-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.signUp-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--footer-text-color);
+}
+
+.signUp-info,
+.signUp-info-2 {
+    font-weight: 400;
+}
+
+.signUp-info-2 {
+    display: flex;
+    flex-direction: column;
+    font-weight: var(--text-font-weight);
+    margin-top: 2vh;
+}
+
+.signUp-info-2 div,
+.signUp-info-2 p {
+    margin: 0px 0px 2px 0px;
+    font-size: 12px;
+    color: var(--signUp-input-text-color);
+}
+
+.signUp-info-2-inner {
+    display: flex;
+    align-items: center;
+}
+
+.signUp-info-2-inner img {
+    margin-right: 10px;
+}
+
+/* Sign Up Design  End*/
+
+
+
 /* Landing Page Design Starts */
 .intro- {
     position: relative;
-    height: 500px;
+    height: 100vh;
     overflow: hidden;
-
 }
 
 .intro {
-    padding: 20px 20px 0 20px;
+    padding: 20px 35px 0 35px;
 }
 
 .intro-bg {
@@ -71,7 +170,7 @@ a:hover {
 
 #iccon {
     width: 25px;
-    margin: 15px 0;
+    margin-top: 12px;
     cursor: pointer;
 }
 
@@ -79,11 +178,13 @@ a:hover {
 
 .intro-header select,
 .intro-header-right button {
-    margin: 10px;
+    margin: 8px;
     font-size: 15px;
-    padding: 7px 17px;
+    padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+    border: 0;
+    height: 80%;
 }
 
 .intro-header-right button {
@@ -98,26 +199,29 @@ a:hover {
     box-shadow: var(--primary-main-color)2px 8px 24px;
 }
 
-
-
 .intro-hero {
     color: var(--body-text-color);
     height: 425px;
     text-align: center;
     position: relative;
+    margin: 25vh auto;
 }
 
-.intro-hero h1 {
-    font-size: 60px;
+.intro-hero h2 {
+    font-size: 47px;
     letter-spacing: .5%;
     font-weight: 700;
     margin: 74px auto 10px auto;
-    width: 686px;
+    width: 600px;
     line-height: 1;
 }
 
 .intro-hero p {
     font-weight: var(--text-font-weight);
+}
+
+.intro-hero-text {
+    font-size: 25px;
 }
 
 .intro-hero-end {
@@ -127,6 +231,7 @@ a:hover {
 
 .intro-hero-end input {
     padding: 10px 22px 10px 8px;
+    width: 30vw;
     font-weight: 300;
     font-family: 'Poppins', sans-serif;
 }
@@ -138,6 +243,7 @@ a:hover {
     cursor: pointer;
     border: none;
     font-weight: 350;
+    width: 10vw;
     font-family: 'Poppins', sans-serif;
 
 }
@@ -149,6 +255,7 @@ a:hover {
 .intro-hero-end button:hover {
     background-color: var(--body-text-color);
     color: var(--primary-main-color);
+    font-weight: normal;
 }
 
 .sec-comp,
@@ -236,6 +343,28 @@ a:hover {
     margin-left: 5vw;
 }
 
+/* accordion start */
+
+
+
+
+
+
+
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    text-align: left;
+    font-weight: normal;
+    color: var(--secondary-color);
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* accordion  end*/
+
 .FAQ {
     color: var(--body-text-color);
     width: 500px;
@@ -244,21 +373,81 @@ a:hover {
 }
 
 .FAQ-list {
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--body-text-color);
     font-weight: var(--text-font-weight);
     background-color: var(--secondary-color);
     padding-right: 1vw;
     padding-left: 1vw;
+    font-family: 'Poppins', sans-serif;
     margin-bottom: 5px;
     cursor: pointer;
+}
+
+.FAQ-list:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
 }
 
 .FAQ-list:hover {
     background-color: var(--body-text-color);
     color: var(--primary-main-color);
     font-weight: normal;
+}
+
+.active {
+    background-color: var(--primary-main-color);
+    font-weight: normal;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.FAQ-end {
+    display: flex;
+    justify-content: center;
+}
+
+.FAQ-end input {
+    padding: 10px 22px 10px 8px;
+    width: 30vw;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+.FAQ-end button {
+    padding: 11px 15px;
+    background-color: var(--primary-main-color);
+    color: var(--body-text-color);
+    cursor: pointer;
+    border: none;
+    font-weight: 350;
+    width: 10vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.FAQ-end button:hover {
+    background-color: var(--body-text-color);
+    color: var(--primary-main-color);
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.FAQ-end span {
+    margin-left: .5vw;
 }
 
 footer {
