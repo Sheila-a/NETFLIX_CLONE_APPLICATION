@@ -24,6 +24,19 @@ iccon2.onclick = function () {
   }
 };
 
+// theme for iccon3
+var iccon3 = document.getElementById("iccon3");
+
+iccon3.onclick = function () {
+  document.body.classList.toggle("light-theme");
+  if (document.body.classList.contains("light-theme")) {
+    iccon3.src = "assets/icons/moon.png";
+  } else {
+    iccon3.src = "assets/icons/sun.png";
+    iccon3.style = "background-color: none";
+  }
+};
+
 // faq dropdown
 var acc = document.getElementsByClassName("FAQ-list");
 var i;
