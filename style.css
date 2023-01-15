@@ -395,17 +395,17 @@ a:hover {
 
     .home-bg {
         height: 100vh;
-        width: 80%;
+        width: 100%;
         /* object-fit: cover; */
     }
 
     .home-hero {
-        margin-top: 10vh;
+        margin-top: 25vh;
     }
 
     .home-hero h2 {
-        font-size: 40px;
-        width: 180px;
+        font-size: 60px;
+        width: 190px;
     }
 
     .sec-span {
@@ -413,7 +413,7 @@ a:hover {
     }
 
     .sec-span p {
-        font-size: 12px;
+        font-size: 18px;
         margin-left: 5px;
     }
 
@@ -422,28 +422,32 @@ a:hover {
     }
 
     .sec-p {
-        font-size: 12px;
+        font-size: 18px;
         width: 300px;
-        line-height: 15px;
+        line-height: 20px;
         font-weight: 200;
     }
 
     .play-ic {
         margin: 0;
-        width: 10px;
+        width: 12px;
     }
 
     .home-btn-1 {
         width: 90px;
-        padding: 5px 10px;
+        padding: 6px 12px;
     }
 
     .info-ic {
-        width: 12px;
+        width: 14px;
     }
 
     .home-btn-2 {
         width: 150px;
+    }
+
+    .hero-slides img {
+        /* width: 170px; */
     }
 
 }
