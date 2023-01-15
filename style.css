@@ -1073,6 +1073,10 @@ a:hover {
     .FAQ-end input {
         width: 35vw;
     }
+
+    .intro-header {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:414px) {
