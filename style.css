@@ -397,7 +397,7 @@ a:hover {
     .home-bg {
         height: 100vh;
         width: 100%;
-        /* object-fit: cover; */
+        object-fit: cover;
     }
 
     .home-hero {
