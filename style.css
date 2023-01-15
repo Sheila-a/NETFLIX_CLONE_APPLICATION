@@ -8,6 +8,7 @@
     --footer-text-color-2: rgba(117, 117, 117, 1);
     --body-text-color: rgba(255, 255, 255, 1);
     --body-text-color-2: rgba(255, 255, 255, 1);
+    --body-text-color-3: rgba(255, 255, 255, 1);
     --text-font-weight: 250;
     --break-line-color: rgba(34, 34, 34, 1);
     --signUp-bg-color: rgba(0, 0, 0, 0.75);
@@ -15,11 +16,12 @@
     --signUp-input-text-color: rgba(140, 140, 140, 1);
     --highlight-color: rgba(0, 113, 235, 1);
     --navbar-bg-color: #141414;
+    --navbar-h-bg-color: #141414;
+    --homePage-bg-color: #141414;
 }
 
 #bodyy {
-    background-color: var(--navbar-bg-color);
-    /* background-color: red; */
+    background-color: var(--homePage-bg-color);
 }
 
 body {
@@ -53,7 +55,8 @@ a:hover {
     --body-text-color-2: white;
     --text-font-weight: 400;
     --secondary-color: rgba(229, 9, 20, 1);
-
+    --homePage-bg-color: rgba(255, 255, 255, 1);
+    --navbar-h-bg-color: rgba(255, 255, 255, 1);
 
     --footer-text-color-2: rgba(255, 255, 255, 1);
     --footer-text-color: rgba(34, 34, 34, 1);
@@ -132,7 +135,7 @@ a:hover {
     padding: 30px 60px;
     height: 15px;
     color: var(--body-text-color);
-    background-color: var(--navbar-bg-color);
+    background-color: var(--navbar-h-bg-color);
 }
 
 .header-left {
@@ -160,7 +163,6 @@ a:hover {
 .header-right p:hover,
 .header-right div:hover {
     cursor: pointer;
-
 }
 
 .hr-dropdown {
@@ -185,17 +187,21 @@ a:hover {
 }
 
 .home-hero {
-    color: var(--body-text-color);
+    color: var(--body-text-color-3);
     /* height: 425px; */
     text-align: left;
     position: relative;
     margin-top: 20vh;
 }
 
+.home-hero-flex p {
+    color: var(--body-text-color);
+}
+
 .home-hero h2 {
     font-size: 70px;
     letter-spacing: .5%;
-    font-weight: var(--text-font-weight);
+    font-weight: 300;
     width: 320px;
     text-align: center;
     line-height: .7;
@@ -237,6 +243,7 @@ a:hover {
     border-radius: 2px;
     width: 120px;
     cursor: pointer;
+    color: var(--homePage-bg-color);
 }
 
 .play-ic {
@@ -278,15 +285,47 @@ a:hover {
 
 .home-hero-flex {
     position: relative;
-    /* overflow: hidden; */
+    margin-bottom: 10vh;
+    overflow: hidden;
 }
 
 
 .home-hero-flex-inner {
     /* display: flex; */
     transform: translateX(0);
-    width: 200%;
+    width: 250%;
     /* position: absolute; */
+}
+
+.hero-slides-4 {
+    display: inline-block;
+    position: relative;
+    height: 400px;
+}
+
+.hero-slides-4 img {
+    object-fit: cover;
+    margin-right: 5px;
+    position: absolute;
+    transition: all .5s ease-in-out;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 100%;
+}
+
+.hero-slides-4 img:hover {
+    transform: scale(1.2);
+    margin: 0 30px;
+}
+
+.fifth-slide-inner {
+    display: flex;
+    position: relative;
+}
+
+.hero-fifth-slides {
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 
 .hero-slides {
@@ -312,6 +351,8 @@ a:hover {
     transform: scale(1.2);
     margin: 0 30px;
 }
+
+
 
 .home-hero-flex-inner img {
     /* width: 100%; */
@@ -359,17 +400,37 @@ a:hover {
     border: none;
 }
 
-.fifth-slide-inner {
-    display: flex;
-    position: relative;
+
+
+.home-hero-arrow-left-4,
+.home-hero-arrow-right-4 {
+    font-size: 50px;
+    color: var(--primary-main-color);
+    position: absolute;
+    top: 200px;
+    cursor: pointer;
+    transition: .4s ease;
 }
 
-.hero-fifth-slides {
-    /* display: flex; */
-    /* flex-direction: column; */
+.home-hero-arrow-left-4 {
+    left: 5px;
+
 }
 
-/* REsponsive Design for Home Page  */
+.home-hero-arrow-right-4 {
+    right: 0;
+
+}
+
+.home-hero-arrow-left-4:hover,
+.home-hero-arrow-right-4:hover {
+    color: var(--body-text-color);
+
+}
+
+
+
+/* Responsive Design for Home Page  */
 @media screen and (max-width:544px) {
     .header-logo {
         width: 150px;
@@ -378,8 +439,10 @@ a:hover {
     /* n */
     .header {
         width: 80px;
-        padding: 15px 20px;
+        padding: 30px 20px;
     }
+
+
 
     .header-left-inner,
     .header-right {
@@ -395,13 +458,13 @@ a:hover {
     }
 
     .home-bg {
-        height: 100vh;
+        height: 90vh;
         width: 100%;
         object-fit: cover;
     }
 
     .home-hero {
-        margin-top: 25vh;
+        margin-top: 40vh;
     }
 
     .home-hero h2 {
@@ -429,14 +492,19 @@ a:hover {
         font-weight: 200;
     }
 
+    .home-hero-end {
+        margin-bottom: 10vh;
+    }
+
     .play-ic {
         margin: 0;
         width: 12px;
     }
 
     .home-btn-1 {
-        width: 90px;
-        padding: 6px 12px;
+        width: 100px;
+        padding: 10px 15px;
+
     }
 
     .info-ic {
@@ -447,8 +515,21 @@ a:hover {
         width: 150px;
     }
 
+
+
+    .home-hero-flex-inner {
+        display: flex;
+    }
+
     .hero-slides img {
-        /* width: 170px; */
+        width: 200px;
+        margin-right: 10px;
+    }
+
+    .home-hero-arrow-left,
+    .home-hero-arrow-right {
+        font-size: 40px;
+        top: 80px;
     }
 
 }
@@ -461,6 +542,11 @@ a:hover {
 
 
 /* Landing Page Design Starts */
+.menu,
+.hamburger {
+    display: none;
+}
+
 .intro- {
     position: relative;
     height: 100vh;
@@ -668,14 +754,6 @@ a:hover {
 }
 
 /* accordion start */
-
-
-
-
-
-
-
-
 .panel {
     padding: 0 18px;
     background-color: var(--panel-color);
@@ -918,6 +996,10 @@ a:hover {
         width: 72%;
     }
 
+    .sec-comp {
+        margin: 8vh;
+    }
+
     .intro-hero-end button,
     .FAQ-end button {
         width: 25vw;
@@ -936,12 +1018,12 @@ a:hover {
         display: none;
     }
 
-    .burger {
+    .burg {
         visibility: visible;
     }
 
-    .burg {
-        visibility: visible;
+    .hamburger {
+        display: block;
     }
 
 
@@ -966,9 +1048,7 @@ a:hover {
 
 @media screen and (max-width:414px) {
 
-    .sec-comp {
-        margin: 8vh;
-    }
+
 
     .intro-hero {
         height: 300px;
