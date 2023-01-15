@@ -575,7 +575,8 @@ a:hover {
     display: flex;
 }
 
-#iccon {
+#iccon,
+#iccon2 {
     width: 25px;
     margin-top: 12px;
     cursor: pointer;
@@ -957,10 +958,12 @@ a:hover {
 
     .hidde-me {
         display: block;
-        margin-left: 0;
     }
 
-    #iccon {}
+    #iccon2 {
+        margin-top: 7px;
+        margin-left: 40vh;
+    }
 
     .FAQ {
         width: 72%;

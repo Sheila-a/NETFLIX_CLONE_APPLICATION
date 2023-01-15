@@ -11,6 +11,19 @@ iccon.onclick = function () {
   }
 };
 
+// theme for hidde-me
+var iccon2 = document.getElementById("iccon2");
+
+iccon2.onclick = function () {
+  document.body.classList.toggle("light-theme");
+  if (document.body.classList.contains("light-theme")) {
+    iccon2.src = "assets/icons/moon.png";
+  } else {
+    iccon2.src = "assets/icons/sun.png";
+    iccon2.style = "background-color: none";
+  }
+};
+
 // faq dropdown
 var acc = document.getElementsByClassName("FAQ-list");
 var i;
