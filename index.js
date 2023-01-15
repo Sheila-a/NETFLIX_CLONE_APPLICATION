@@ -33,8 +33,20 @@ var slidess = homeHeroFlexInner.getElementsByClassName("hero-slides");
 function next() {
   homeHeroFlexInner.append(slidess[0]);
 }
-// var currentIndex = 1;
-// displaySlides(currentIndex);
+
+// slider 2
+var homeHeroFlexInner2 = document.getElementById("home-hero-flex-inner2");
+var slidess = homeHeroFlexInner2.getElementsByClassName("hs2");
+function next2() {
+  homeHeroFlexInner2.append(slidess[0]);
+}
+
+// slider 3
+var homeHeroFlexInner3 = document.getElementById("home-hero-flex-inner2");
+var slidess = homeHeroFlexInner3.getElementsByClassName("hs2");
+function next3() {
+  homeHeroFlexInner3.append(slidess[0]);
+}
 
 // hamburger
 // const menu = document.querySelector(".menu");
