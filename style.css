@@ -16,7 +16,10 @@
     --navbar-bg-color: #141414;
 }
 
-
+#bodyy {
+    background-color: var(--navbar-bg-color);
+    /* background-color: red; */
+}
 
 body {
     margin: 0;
@@ -90,6 +93,11 @@ a:hover {
 
 
 /* Home Page Design Start */
+.iccon-hp {
+    width: 25px;
+    cursor: pointer;
+}
+
 .header,
 .header-left,
 .header-right,
@@ -252,16 +260,97 @@ a:hover {
     /* margin-top: 5px; */
 }
 
+.home-hero-flex {
+    position: relative;
+    /* overflow: hidden; */
+}
+
 
 .home-hero-flex-inner {
-    display: flex;
+    /* display: flex; */
+    transform: translateX(0);
+    width: 200%;
+    /* position: absolute; */
+}
+
+.hero-slides {
+    display: inline-block;
+    /* overflow: hidden; */
+    position: relative;
+    /* height: 150px; */
+    /* width: 200px; */
+}
+
+.hero-slides img {
+    /* width: 100%; */
+    /* height: 100%; */
+    object-fit: cover;
+    margin-right: 5px;
+    position: absolute;
+    transition: all .5s ease-in-out;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-slides img:hover {
+    transform: scale(1.2);
+    margin: 0 30px;
 }
 
 .home-hero-flex-inner img {
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    /* height: 100%; */
     object-fit: cover;
     margin-right: 5px;
+    position: relative;
+    transition: all .7s ease-in-out;
+    border-radius: 5px;
+}
+
+.home-hero-flex-inner img:hover {
+    transform: scale(1.2);
+    margin: 0 30px;
+    /* opacity: .7; */
+}
+
+.home-hero-arrow-left,
+.home-hero-arrow-right {
+    font-size: 50px;
+    color: var(--primary-main-color);
+    position: absolute;
+    top: 100px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.home-hero-arrow-left:hover,
+.home-hero-arrow-right:hover {
+    color: var(--body-text-color);
+}
+
+.home-hero-arrow-right {
+    right: 0;
+    /* opacity: .5; */
+}
+
+.home-hero-arrow-left {
+    left: 5px;
+}
+
+.arrow-btn {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.fifth-slide-inner {
+    display: flex;
+    position: relative;
+}
+
+.hero-fifth-slides {
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 
 /* Home Page Design  End*/
@@ -585,7 +674,7 @@ a:hover {
     margin-left: .5vw;
 }
 
-.landing-footer footer {
+.landing-footer {
     color: var(--footer-text-color);
     font-weight: var(--text-font-weight);
     justify-content: center;
@@ -597,6 +686,176 @@ a:hover {
 .footer-div-container {
     display: flex;
     justify-content: space-between;
+}
+
+.burger {
+    display: none;
+
+}
+
+/* .burger {
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    right: 10vw;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+}
+
+.burger div {
+    width: 1.8rem;
+    height: 0.2rem;
+    background-color: var(--primary-main-color);
+    border-radius: 10px;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+
+} */
+/* 
+.burger:nth-child(1) {
+    transform: rotate(52deg)" : " rotate(0)")
+
+} */
+
+/* .burger:nth-child(2) {
+    transform: ${({ open })=>(open ? "translateX(100%)" : "translateX(0)")
+}
+
+;
+opacity: ${({ open })=>(open ? 0 : 1)
+}
+
+;
+}
+
+&:nth-child(3) {
+    transform: ${({ open })=>(open ? "rotate(-52deg)" : "rotate(0)")
+}
+
+;
+}
+} */
+
+/* Responsive for landing page */
+@media screen and (max-width: 1085px) {
+
+    .intro-hero-end input,
+    .FAQ-end input {
+        width: 28vw;
+    }
+
+    .intro-hero-end button,
+    .FAQ-end button {
+        width: 15vw;
+    }
+}
+
+@media screen and (max-width:933px) {
+    .landing-footer {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:815px) {
+
+    .intro-hero-end button,
+    .FAQ-end button {
+        width: 20vw;
+    }
+
+    .intro-hero-end input,
+    .FAQ-end input {
+        width: 40vw;
+    }
+
+    .intro-hero-end input,
+    .intro-hero-end button,
+    .FAQ-end input,
+    .FAQ-end button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width:784px) {
+    .footer-div-container {
+        flex-direction: column;
+    }
+
+    .intro-hero h2 {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width:544px) {
+    .FAQ {
+        width: 72%;
+    }
+
+    .intro-hero-end button,
+    .FAQ-end button {
+        width: 25vw;
+    }
+
+    .intro-hero-end input,
+    .FAQ-end input {
+        width: 40vw;
+    }
+
+    .intro-hero h2 {
+        font-size: 40px;
+    }
+
+    .intro-header-right {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width:447px) {
+    .FAQ {
+        width: 85%;
+    }
+
+    .intro-hero-end button,
+    .FAQ-end button {
+        width: 40vw;
+    }
+
+    .intro-hero-end input,
+    .FAQ-end input {
+        width: 35vw;
+    }
+}
+
+@media screen and (max-width:414px) {
+
+    .sec-comp {
+        margin: 5vh;
+    }
+
+    .intro-hero {
+        height: 300px;
+        margin: 0vh;
+    }
+
+    .intro-hero h2 {
+        font-size: 30px;
+    }
+
+    .intro-hero-text {
+        font-size: 20px;
+    }
+
+    .intro-hero p {
+        font-size: 15px;
+    }
+
+
 }
 
 /* Landing Page Design Ends */

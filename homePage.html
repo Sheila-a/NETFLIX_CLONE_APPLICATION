@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>NETFLIX Home</title>
   </head>
-  <body>
+  <body id="bodyy">
     <!-- Header Start -->
     <div class="header">
       <div class="header-left">
@@ -37,6 +37,7 @@
         </div>
       </div>
       <div class="header-right">
+        <img src="assets/icons/sun.png" id="iccon" style="margin-top: 0" />
         <img src="assets/icons/home/search.png" alt="" />
         <p>ÇOCUK</p>
         <img src="assets/icons/home/gift.png" alt="" />
@@ -84,16 +85,44 @@
               Daha Fazla Bilgi
             </button>
           </div>
+          <!-- slides begin -->
+          <!-- first slide -->
           <div class="home-hero-flex">
             <p>Netflix te Populer</p>
-            <div class="home-hero-flex-inner">
-              <img src="assets/images/home/Amsterdam.png" alt="" />
-              <img src="assets/images/home/modernF.png" alt="" />
-              <img src="assets/images/home/chef.png" alt="" />
-              <img src="assets/images/home/MoviePoster (4).png" alt="" />
-              <img src="assets/images/home/Matrix.png" alt="" />
+            <div class="home-hero-flex-inner" id="home-hero-flex-inner">
+              <div class="hero-slides">
+                <img src="assets/images/home/a1.png" alt="" />
+              </div>
+              <div class="hero-slides">
+                <img src="assets/images/home/a2.png" alt="" />
+              </div>
+              <div class="hero-slides">
+                <img src="assets/images/home/a3.png" alt="" />
+              </div>
+              <div class="hero-slides">
+                <img src="assets/images/home/a4.png" alt="" />
+              </div>
+              <div class="hero-slides">
+                <img src="assets/images/home/a1.png" alt="" />
+              </div>
+              <div class="hero-slides">
+                <img src="assets/images/home/a2.png" alt="" />
+              </div>
+              <div class="hero-slides">
+                <img src="assets/images/home/a3.png" alt="" />
+              </div>
+              <div class="hero-slides">
+                <img src="assets/images/home/a4.png" alt="" />
+              </div>
             </div>
+            <button class="home-hero-arrow-left arrow-btn" onclick="prev()">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="home-hero-arrow-right arrow-btn" onclick="next()">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
           </div>
+          <!-- second slide -->
           <div class="home-hero-flex">
             <p>Kemal, İzlemeye Devam Et</p>
             <div class="home-hero-flex-inner">
@@ -103,9 +132,18 @@
               <img src="assets/images/home/b4.png" alt="" />
               <img src="assets/images/home/b5.png" alt="" />
             </div>
+            <i
+              class="fa-solid fa-chevron-right home-hero-arrow-right"
+              onclick="setSlides(1)"
+            ></i>
+            <i
+              class="fa-solid fa-chevron-left home-hero-arrow-left"
+              onclick="setSlides(-1)"
+            ></i>
           </div>
+          <!--third slide  -->
           <div class="home-hero-flex">
-            <p>Gündemdekiler</p>
+            <p>Kemal, İzlemeye Devam Et</p>
             <div class="home-hero-flex-inner">
               <img src="assets/images/home/c1.png" alt="" />
               <img src="assets/images/home/c2.png" alt="" />
@@ -113,9 +151,18 @@
               <img src="assets/images/home/c4.png" alt="" />
               <img src="assets/images/home/c5.png" alt="" />
             </div>
+            <i
+              class="fa-solid fa-chevron-right home-hero-arrow-right"
+              onclick="setSlides(1)"
+            ></i>
+            <i
+              class="fa-solid fa-chevron-left home-hero-arrow-left"
+              onclick="setSlides(-1)"
+            ></i>
           </div>
+          <!-- fourth slide -->
           <div class="home-hero-flex">
-            <p>Netflix Orijinal İçerikleri</p>
+            <p>Gündemdekiler</p>
             <div class="home-hero-flex-inner">
               <img src="assets/images/home/d1.png" alt="" />
               <img src="assets/images/home/d2.png" alt="" />
@@ -123,38 +170,116 @@
               <img src="assets/images/home/d4.png" alt="" />
               <img src="assets/images/home/d5.png" alt="" />
             </div>
+            <i
+              class="fa-solid fa-chevron-right home-hero-arrow-right"
+              onclick="setSlides(1)"
+            ></i>
+            <i
+              class="fa-solid fa-chevron-left home-hero-arrow-left"
+              onclick="setSlides(-1)"
+            ></i>
           </div>
+          <!-- fifth slide -->
+          <div class="home-hero-flex">
+            <p>Netflix Orijinal İçerikleri</p>
+            <div class="fifth-slide-inner">
+              <div class="hero-fifth-slides">
+                <img src="assets/icons/home/1.png" alt="" />
+                <img src="assets/images/home/e1.png" alt="" />
+              </div>
+              <div class="hero-fifth-slides">
+                <img src="assets/icons/home/2.png" alt="" />
+                <img src="assets/images/home/e2.png" alt="" />
+              </div>
+              <div class="hero-fifth-slides">
+                <img src="assets/icons/home/3.png" alt="" />
+                <img src="assets/images/home/e3.png" alt="" />
+              </div>
+              <div class="hero-fifth-slides">
+                <img src="assets/icons/home/4.png" alt="" />
+                <img src="assets/images/home/e4.png" alt="" />
+              </div>
+              <!--  <div class="hero-fifth-slides">
+                <img src="assets/icons/home/5.png" alt="" />
+                <img src="assets/images/home/d5.png" alt="" />
+              </div> -->
+            </div>
+            <i
+              class="fa-solid fa-chevron-right home-hero-arrow-right"
+              onclick="setSlides(1)"
+            ></i>
+            <i
+              class="fa-solid fa-chevron-left home-hero-arrow-left"
+              onclick="setSlides(-1)"
+            ></i>
+          </div>
+          <!-- Sixth slide -->
           <div class="home-hero-flex">
             <p>Türkiye'de Bugünün Top 10 Listesi</p>
             <div class="home-hero-flex-inner">
-              <img src="assets/images/home/Amsterdam.png" alt="" />
-              <img src="assets/images/home/modernF.png" alt="" />
-              <img src="assets/images/home/chef.png" alt="" />
-              <img src="assets/images/home/MoviePoster (4).png" alt="" />
-              <img src="assets/images/home/Matrix.png" alt="" />
+              <img src="assets/images/home/f1.png" alt="" />
+              <img src="assets/images/home/f1.png" alt="" />
+              <img src="assets/images/home/f2.png" alt="" />
+              <img src="assets/images/home/f3.png" alt="" />
+              <img src="assets/images/home/f4.png" alt="" />
             </div>
+            <i
+              class="fa-solid fa-chevron-right home-hero-arrow-right"
+              onclick="setSlides(1)"
+            ></i>
+            <i
+              class="fa-solid fa-chevron-left home-hero-arrow-left"
+              onclick="setSlides(-1)"
+            ></i>
           </div>
+          <!-- last slide -->
           <div class="home-hero-flex">
             <p>Yeniden İzle</p>
             <div class="home-hero-flex-inner">
-              <img src="assets/images/home/Amsterdam.png" alt="" />
-              <img src="assets/images/home/modernF.png" alt="" />
-              <img src="assets/images/home/chef.png" alt="" />
-              <img src="assets/images/home/MoviePoster (4).png" alt="" />
-              <img src="assets/images/home/Matrix.png" alt="" />
+              <img src="assets/images/home/g1.png" alt="" />
+              <img src="assets/images/home/g2.png" alt="" />
+              <img src="assets/images/home/g3.png" alt="" />
+              <img src="assets/images/home/g4.png" alt="" />
+              <img src="assets/images/home/g5.png" alt="" />
             </div>
-          </div>
-          <div class="home-hero-flex">
-            <p>Listem</p>
-            <div class="home-hero-flex-inner">
-              <img src="assets/images/home/Amsterdam.png" alt="" />
-              <img src="assets/images/home/modernF.png" alt="" />
-              <img src="assets/images/home/chef.png" alt="" />
-              <img src="assets/images/home/MoviePoster (4).png" alt="" />
-              <img src="assets/images/home/Matrix.png" alt="" />
-            </div>
+            <i
+              class="fa-solid fa-chevron-right home-hero-arrow-right"
+              onclick="setSlides(1)"
+            ></i>
+            <i
+              class="fa-solid fa-chevron-left home-hero-arrow-left"
+              onclick="setSlides(-1)"
+            ></i>
           </div>
         </div>
+        <!-- Footer Start -->
+        <footer class="landing-footer">
+          <p>Questions? Call 1-844-505-2993</p>
+          <div class="footer-div-container">
+            <div class="footer-div">
+              <p>Seslendirme ve Alt Yazı</p>
+              <p>Medya Merkezi</p>
+              <p>Gizlilik</p>
+              <p>Bize Ulaşın</p>
+            </div>
+            <div class="footer-div">
+              <p>Sesli Betimleme</p>
+              <p>Yatırımcı İlişkileri</p>
+              <p>Yasal Hükümler</p>
+            </div>
+            <div class="footer-div">
+              <p>Yardım Merkezi</p>
+              <p>İş İmkanları</p>
+              <p>Çerez Tercihleri</p>
+            </div>
+            <div class="footer-div">
+              <p>Hediye Kartları</p>
+              <p>Kullanım Koşulları</p>
+              <p>Kurumsal Bilgiler</p>
+            </div>
+          </div>
+        </footer>
+        <!-- Footer End-->
       </div>
     </div>
     <!-- First Component End-->
