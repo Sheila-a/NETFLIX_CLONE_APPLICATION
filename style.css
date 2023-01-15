@@ -83,12 +83,28 @@ a:hover {
     height: 200px;
 }
 
-.profile-flex p {
+.profile-flex button {
     font-weight: var(--text-font-weight);
     color: var(--footer-text-color);
-    outline: 5px var(--footer-text-color);
-    pad: 5px 10px;
+    padding: 8px 10px;
+    appearance: none;
+    background: none;
+    outline: 1px var(--footer-text-color);
 
+}
+
+/* Responsive Design for Profile page */
+@media screen and (max-width: 1085px) {
+    .profile-flex-inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-flex-items,
+    .profile-flex-items img {
+        width: 80%;
+        object-fit: cover;
+    }
 }
 
 /* Profile Page Design End*/
