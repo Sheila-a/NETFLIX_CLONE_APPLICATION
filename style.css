@@ -542,7 +542,8 @@ a:hover {
 
 
 /* Landing Page Design Starts */
-.menu {
+.menu,
+.hamburger {
     display: none;
 }
 
@@ -1021,6 +1022,16 @@ a:hover {
         visibility: visible;
     }
 
+    .hamburger {
+        display: block;
+    }
+
+    /* * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     .menuItem {
         display: block;
         margin: 2rem 4rem;
@@ -1065,7 +1076,7 @@ a:hover {
 
     .showMenu {
         transform: translateY(0);
-    }
+    } */
 
 
 }
