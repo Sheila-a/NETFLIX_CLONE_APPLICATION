@@ -102,7 +102,7 @@ a:hover {
 
     .profile-flex-items,
     .profile-flex-items img {
-        width: 80%;
+        width: 85%;
         object-fit: cover;
     }
 }
