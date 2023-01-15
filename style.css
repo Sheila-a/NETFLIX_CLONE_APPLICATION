@@ -372,7 +372,7 @@ a:hover {
 /* REsponsive Design for Home Page  */
 @media screen and (max-width:544px) {
     .header-logo {
-        width: 100px;
+        width: 150px;
     }
 
     .header {
