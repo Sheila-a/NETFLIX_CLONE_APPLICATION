@@ -855,6 +855,10 @@ opacity: ${({ open })=>(open ? 0 : 1)
         font-size: 15px;
     }
 
+    .burger {
+        display: block;
+    }
+
 
 }
 
