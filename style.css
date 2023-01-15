@@ -175,7 +175,6 @@ a:hover {
 
 .home {
     padding: 0 60px;
-
 }
 
 .home-bg {
@@ -220,7 +219,6 @@ a:hover {
 
 .sec-p {
     font-weight: 300;
-    line-height: 0;
     width: 650px;
     font-size: 26px;
     line-height: 33px;
@@ -369,6 +367,85 @@ a:hover {
 .hero-fifth-slides {
     /* display: flex; */
     /* flex-direction: column; */
+}
+
+/* REsponsive Design for Home Page  */
+@media screen and (max-width:544px) {
+    .header-logo {
+        width: 100px;
+    }
+
+    .header {
+        width: 80px;
+        padding: 15px 20px;
+    }
+
+    .header-left-inner,
+    .header-right {
+        display: none;
+    }
+
+    .home- {
+        width: 100%;
+    }
+
+    .home {
+        padding: 0 20px;
+    }
+
+    .home-bg {
+        height: 100vh;
+        width: 80%;
+        /* object-fit: cover; */
+    }
+
+    .home-hero {
+        margin-top: 10vh;
+    }
+
+    .home-hero h2 {
+        font-size: 40px;
+        width: 180px;
+    }
+
+    .sec-span {
+        height: 25px;
+    }
+
+    .sec-span p {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .top10-ic {
+        width: 5%;
+    }
+
+    .sec-p {
+        font-size: 12px;
+        width: 300px;
+        line-height: 15px;
+        font-weight: 200;
+    }
+
+    .play-ic {
+        margin: 0;
+        width: 10px;
+    }
+
+    .home-btn-1 {
+        width: 90px;
+        padding: 5px 10px;
+    }
+
+    .info-ic {
+        width: 12px;
+    }
+
+    .home-btn-2 {
+        width: 150px;
+    }
+
 }
 
 /* Home Page Design  End*/
