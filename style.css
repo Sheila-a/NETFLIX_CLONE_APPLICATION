@@ -842,7 +842,7 @@ opacity: ${({ open })=>(open ? 0 : 1)
 @media screen and (max-width:414px) {
 
     .sec-comp {
-        margin: 5vh;
+        margin: 8vh;
     }
 
     .intro-hero {
