@@ -432,6 +432,11 @@ a:hover {
 
 /* Responsive Design for Home Page  */
 @media screen and (max-width:544px) {
+
+    #iccon3 {
+        margin-left: 57vh;
+    }
+
     .header-logo {
         width: 150px;
     }
@@ -565,8 +570,6 @@ a:hover {
     justify-content: space-between;
     position: relative;
     top: 0;
-
-
     z-index: 1;
     /* position: sticky; */
 }
@@ -576,7 +579,8 @@ a:hover {
 }
 
 #iccon,
-#iccon2 {
+#iccon2,
+#iccon3 {
     width: 25px;
     margin-top: 12px;
     cursor: pointer;
