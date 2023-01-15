@@ -693,12 +693,14 @@ a:hover {
 
 }
 
-/* .burger {
+.burger {
     width: 2rem;
     height: 2rem;
+    margin: 2vh auto;
     position: fixed;
     right: 10vw;
     display: flex;
+    cursor: pointer;
     justify-content: space-around;
     flex-flow: column nowrap;
 }
@@ -706,12 +708,17 @@ a:hover {
 .burger div {
     width: 1.8rem;
     height: 0.2rem;
+    margin-bottom: 5px;
     background-color: var(--primary-main-color);
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
+}
 
-} */
+.burger div::after {
+    background-color: var(--body-text-color);
+}
+
 /* 
 .burger:nth-child(1) {
     transform: rotate(52deg)" : " rotate(0)")
@@ -855,8 +862,16 @@ opacity: ${({ open })=>(open ? 0 : 1)
         font-size: 15px;
     }
 
+    .net-logo {
+        position: fixed;
+    }
+
     .burger {
         display: block;
+    }
+
+    .intro-header {
+        background-color: var(--secondary-color) !important;
     }
 
 
