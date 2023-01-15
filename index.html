@@ -8,6 +8,11 @@
       content="width=
     , initial-scale=1.0"
     />
+    <!-- Material icon -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -53,7 +58,28 @@
           </div> -->
           <!-- <button class="burg">
             <div class="bar"></div>
+            <i></i>
           </button> -->
+          <ul class="menu">
+            <li>
+              <select class="menuItem">
+                <option value="" selected>
+                  <span class="fas fa-globe"></span>English
+                </option>
+                <option value="">Spanish</option>
+              </select>
+            </li>
+            <li>
+              <button class="menuItem">
+                <a href="signInPage.html"> Sign in</a>
+              </button>
+            </li>
+          </ul>
+          <button class="hamburger">
+            <!-- material icons https://material.io/resources/icons/ -->
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
+          </button>
         </div>
         <div class="intro-hero">
           <h2>Unlimited movies, TV shows and more.</h2>
