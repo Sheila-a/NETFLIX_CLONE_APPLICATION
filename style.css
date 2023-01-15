@@ -958,7 +958,23 @@ a:hover {
 
 }
 
+@media screen and (max-width:486px) {
+    #iccon2 {
+        margin-top: 7px;
+        margin-left: 0vh;
+    }
+}
+
 @media screen and (max-width:544px) {
+    .intro-header {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .net-logo {
+        width: 80px;
+
+    }
 
     .hidde-me {
         display: block;
@@ -966,7 +982,7 @@ a:hover {
 
     #iccon2 {
         margin-top: 7px;
-        margin-left: 40vh;
+        margin-left: 30vh;
     }
 
     .FAQ {
@@ -1081,7 +1097,7 @@ a:hover {
     }
 
     .net-logo {
-        position: fixed;
+        /* position: fixed; */
     }
 
 
