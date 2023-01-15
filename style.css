@@ -999,6 +999,10 @@ a:hover {
         width: 72%;
     }
 
+    .sec-comp {
+        margin: 8vh;
+    }
+
     .intro-hero-end button,
     .FAQ-end button {
         width: 25vw;
@@ -1047,9 +1051,7 @@ a:hover {
 
 @media screen and (max-width:414px) {
 
-    .sec-comp {
-        margin: 8vh;
-    }
+
 
     .intro-hero {
         height: 300px;
