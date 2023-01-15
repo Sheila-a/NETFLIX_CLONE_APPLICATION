@@ -397,7 +397,7 @@ a:hover {
     }
 
     .home-bg {
-        height: 100vh;
+        height: 90vh;
         width: 100%;
         object-fit: cover;
     }
@@ -431,14 +431,19 @@ a:hover {
         font-weight: 200;
     }
 
+    .home-hero-end {
+        margin-bottom: 10vh;
+    }
+
     .play-ic {
         margin: 0;
         width: 12px;
     }
 
     .home-btn-1 {
-        width: 90px;
-        padding: 6px 12px;
+        width: 100px;
+        padding: 10px 15px;
+
     }
 
     .info-ic {
